@@ -12,8 +12,10 @@
 <div class="container">
     <% @movie_info.each do |movie| %>
         <section class="row movie_table">
-            <div class="col-sm-4 poster"><img src="<%= movie['Poster']%>"></img></div>
-            <div class="col-sm-6 content">
+            
+            <div class="poster"><img src="<%= movie['Poster']%>"></img></div>
+            
+            <div class="content">
                 <p>Title : <%= movie['Title'] %></p>
                 <p>Run time : <%= movie['Runtime']%></p>
                 <p>Year : <%= movie['Year']%> </p>
